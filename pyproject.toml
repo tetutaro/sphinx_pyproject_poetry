@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "sphinx-pyproject-poetry"
+version = "0.0.0"  # automatically updated by poetry-dynamic-versioning
+description = ""
+authors = ["Tetsutaro Maruyama <tetsutaro.maruyama@gmail.com>"]
+readme = "README.md"
+packages = [{include = "sphinx_pyproject_poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+format = "{base}"
+style = "pep440"
+
+[tool.poetry-dynamic-versioning.substitution]
+files = ["sphinx_pyproject_poetry/__init__.py"]
+
+# [tool.flake8]
+# -> .flake8
+
+[tool.black]
+line-length = 79
+include = "\\.pyi?$"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+addopts = "-v --cov --flake8 --mypy"
+filterwarnings = """
+    ignore:SelectableGroups dict interface is deprecated. Use select.
+"""
+
+[tool.sphinx-pyproject]
+copyright = "2023 Tetsutaro Maruyama"
+extensions = ["sphinx.ext.autodoc", "sphinx.ext.napoleon", "sphinx.ext.linkcode", "sphinx.ext.githubpages", "sphinx_rtd_theme"]
+templates_path = ["_templates"]
+exclude_patterns = []
+language = "ja"
+html_theme = "sphinx_rtd_theme"
+html_static_path = ["_static"]
+github_username = "tetutaro"
