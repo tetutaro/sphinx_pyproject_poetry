@@ -8,6 +8,21 @@ packages = [{include = "sphinx_pyproject_poetry"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+dom-toml = "^0.6.0"
+domdf-python-tools = "^3.6.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+flake8 = "4.0.1"
+coverage = "^7.0.5"
+mypy = "^0.991"
+pytest = "^7.2.1"
+pytest-flake8 = "^1.1.1"
+pytest-cov = "^4.0.0"
+sphinx = "^6.1.3"
+sphinx-rtd-theme = "1.2.0rc2"
+python-lsp-server = "^1.7.1"
+pytest-mypy = "^0.10.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
@@ -39,7 +54,7 @@ filterwarnings = """
 """
 
 [tool.sphinx-pyproject]
-copyright = "2023 Tetsutaro Maruyama"
+copyright = "2023, Tetsutaro Maruyama"
 extensions = ["sphinx.ext.autodoc", "sphinx.ext.napoleon", "sphinx.ext.linkcode", "sphinx.ext.githubpages", "sphinx_rtd_theme"]
 templates_path = ["_templates"]
 exclude_patterns = []

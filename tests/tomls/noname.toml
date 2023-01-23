@@ -1,0 +1,4 @@
+[tool.poetry]
+version = "0.1.2"
+description = "test"
+authors = ["1st Author <1st.author@domain>"]

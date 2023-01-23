@@ -15,10 +15,12 @@ class TestSphinxConfig:
             pyproject_file="pyproject.toml", globalns=globals()
         )
         freedom: Dict[str, Any] = {
-            "copyright": "2022, Tetsutaro Maruyama",
+            "copyright": "2023, Tetsutaro Maruyama",
             "extensions": [
                 "sphinx.ext.autodoc",
                 "sphinx.ext.napoleon",
+                "sphinx.ext.linkcode",
+                "sphinx.ext.githubpages",
                 "sphinx_rtd_theme",
             ],
             "templates_path": ["_templates"],
@@ -26,6 +28,7 @@ class TestSphinxConfig:
             "language": "ja",
             "html_theme": "sphinx_rtd_theme",
             "html_static_path": ["_static"],
+            "github_username": "tetutaro",
         }
         assert config.name == "sphinx-pyproject-poetry"
         assert len(config) == len(freedom)
