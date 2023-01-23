@@ -23,6 +23,6 @@ def linkcode_resolve(
     if filename == "sphinx_pyproject_poetry":
         filename += "/__init__.py"
     return (
-        f"https://github.com/{github_username}/<package>"
+        f"https://github.com/{github_username}/sphinx_pyproject_poetry"
         f"/blob/main/{filename}"
     )
