@@ -1,0 +1,4 @@
+[submodule "docs/build"]
+	path = docs/build
+	url = git@github.com:tetutaro/sphinx_pyproject_poetry.git
+	branch = gh-pages
