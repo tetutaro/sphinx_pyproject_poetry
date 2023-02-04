@@ -16,7 +16,7 @@ from domdf_python_tools.paths import PathPlus
 from domdf_python_tools.typing import PathLike
 from domdf_python_tools.words import word_join
 
-__version__ = "0.1.0"  # Automatically updated by poetry-dynamic-versioning
+__version__ = "0.1.1"  # Automatically updated by poetry-dynamic-versioning
 __all__ = ["SphinxConfig"]
 
 

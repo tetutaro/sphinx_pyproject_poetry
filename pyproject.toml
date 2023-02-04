@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sphinx-pyproject-poetry"
-version = "0.1.0"  # automatically updated by poetry-dynamic-versioning
+version = "0.1.1"  # automatically updated by poetry-dynamic-versioning
 description = ""
 authors = ["Tetsutaro Maruyama <tetsutaro.maruyama@gmail.com>"]
 readme = "README.md"
