@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "sphinx_pyproject_poetry"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.9,<4.0"
 dom-toml = "^0.6.0"
 domdf-python-tools = "^3.6.0"
 
